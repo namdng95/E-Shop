@@ -3,10 +3,10 @@
 	class DB {
 
 		public $con;
-		protected $server = "localhost";
-		protected $username = "root";
-		protected $password = "";
-		protected $dbName = "demosql";
+		protected $server = "ec2-54-225-214-37.compute-1.amazonaws.com";
+		protected $username = "nwqthriwiwqogg";
+		protected $password = "3d583663bf2a961693294d3a2b000823dd302a0a748324263f567fa3518ba313";
+		protected $dbName = "daqgrt26tj7dvo";
 
 		function __construct(){
 

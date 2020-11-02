@@ -13,10 +13,10 @@
                     <label>Name</label>
                     <input name="name" type="text" class="form-control" value="<?php echo $row["name"]; ?>" required>
                 </div>
-                <div class="form-group position-relative">
+                <!-- <div class="form-group position-relative">
                     <label>Email</label>
                     <input name="email" type="text" class="form-control" value="<?php echo $row["email"]; ?>" required>
-                </div>
+                </div> -->
                 <div class="form-group position-relative">
                     <label>Password</label>
                     <input name="password" type="password" class="form-control" value="<?php echo $row["password"]; ?>" required>

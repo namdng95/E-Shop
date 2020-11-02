@@ -81,8 +81,8 @@
 			//var_dump($check);
 			return json_encode($check);
 		}
-		public function update($id, $email, $password, $name, $dob, $phone, $image, $active){
-			$sql = "UPDATE Users SET email = '$email', password = '$password', name = '$name', dob = '$dob', phone = '$phone', img = '$image', active = '$active' WHERE id = $id";
+		public function update($id, $password, $name, $dob, $phone, $image, $active){
+			$sql = "UPDATE Users SET password = '$password', name = '$name', dob = '$dob', phone = '$phone', img = '$image', active = '$active' WHERE id = $id";
 			$result = false;
 			if(mysqli_query($this->con,$sql)){
 				$result = true;

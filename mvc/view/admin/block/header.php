@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" type="text/css" href="../public/admin/css/styleLogin.css">
+    <link rel="stylesheet" type="text/css" href="../public/admin/assets/css/styleLogin.css">
 </head>
 
 <body>

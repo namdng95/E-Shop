@@ -8,9 +8,25 @@
 		function __construct()
 		{
 			$this->user = $this->model("User");
-		}
+        }
+        
 
         public function index(){
+            $email = $password = '';
+            if(isset($_COOKIE['email']) && isset($_COOKIE['password'])){
+                if(!empty($_COOKIE['email']) && !empty($_COOKIE['password'])){
+                    $email = $_COOKIE['email'];
+                    $password = $_COOKIE['password'];
+                }
+            }
+            
+            $this->viewAdmin("layoutAdmin", [
+                "page" => "admin/adminLogin",
+                "email" => $email,
+                "password" => $password,
+            ]);
+        }
+        public function admin(){
             $email = $password = '';
             if(isset($_COOKIE['email']) && isset($_COOKIE['password'])){
                 if(!empty($_COOKIE['email']) && !empty($_COOKIE['password'])){
@@ -105,7 +121,7 @@
                 }
 
             }else{
-                $this->Errors = "Email or password is invalid!";
+                $this->Errors = "Something was wrong! Please check again..! x_X'";
 
                 $this->viewAdmin("layoutAdmin",[
                     "page" => "admin/adminLogin",
